@@ -1,3 +1,7 @@
+#LInk do tutorial 
+#http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+
+
 # make1
 
 # hellomake: hellomake.cpp hellofunc.cpp

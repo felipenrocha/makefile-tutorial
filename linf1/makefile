@@ -1,7 +1,16 @@
 #LInk do tutorial 
 #http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
-
-
+# Estrutura diretorio parara make 5:
+	# include	
+	# 	-> *.hpp
+	# src
+	#	->makefile
+	# 	-> *.cpp
+	# 		obj
+	# 			-> *.o
+	# lib
+	# 	->libs
+	# 
 # make1
 
 # hellomake: hellomake.cpp hellofunc.cpp
@@ -24,7 +33,7 @@ CC=g++
 CFLAGS=-I.
 DEPS=hellomake.hpp
 
-%.o : %.cpp $(DEPS)
+%.o: %.cpp $(DEPS)
 		$(CC) -c $@ $< 
 hellomake: hellofunc.o
 		$(CC) -o hellomake hellomake.cpp hellofunc.o 
